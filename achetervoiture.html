@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- cdn bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- animation css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- cdn js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <!-- fichier css  -->
-    <link rel="stylesheet" href="css/style.css">
     <title> Achat-Voiture </title>
 </head>
 
@@ -41,50 +45,166 @@
             </div>
 
         </div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item" style="height: 410px;">
-                    <img src="images/carousel 3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3 overflow-container" style="max-width: 700px;">
-                            <h4 class="text-light text-uppercase font-weight-medium mb-3"> Nous Vous revendons des
-                                voitures de marque et avec des garanties</h4>
-                            <h3 class="display-4 text-white mb-4 font font-weight-semi-blod ">Prix Raisonnable</h3>
-                            <a href=""
-                                class="btn text-white py-2 px-3 btn-btn-success text-size-xl animate__animated animate__bounce">Acheter
-                                Maintenant</a>
+        <!-- Hero Section Begin -->
+        <section class="hero spad set-bg" data-setbg="images/lb-1.jpg" style="height: 700px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero__text">
+                            <div class="hero__text__title">
+                                <span>Trouvez Votre Voiture de Rêve</span>
+                                <h2>Les Meilleurs marque c'est chez Bra-Auto</h2>
+                            </div>
+                            <a href="#" class="primary-btn"><img src="img/wheel.png" alt=""> Test Drive</a>
+                            <a href="#" class="primary-btn more-btn">Learn More</a>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item active" style="height: 410px;">
-                    <img src="images/carousel4.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 700px;">
-                            <h4 class="text-light text-uppercase font-weight-medium mb-3"> Nous Vous revendons des
-                                voitures de marque et avec des garanties</h4>
-                            <h3 class="display-4 text-white mb-4 font font-weight-semi-blod">Prix Raisonnable</h3>
-                            <a href=""
-                                class="btn text-white py-2 px-3 btn-btn-success text-size-xl animate__animated animate__bounce">Acheter
-                                Maintenant</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" style="height: 410px;">
-                    <img src="images/carosel.PNG" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 700px;">
-                            <h4 class="text-light text-uppercase font-weight-medium mb-3"> Nous Vous revendons des
-                                voitures de marque et avec des garanties</h4>
-                            <h3 class="display-4 text-white mb-4 font font-weight-semi-blod">Prix Raisonnable</h3>
-                            <a href=""
-                                class="btn text-white py-2 px-3 btn-btn-success text-size-xl animate__animated animate__bounce">Acheter
-                                Maintenant</a>
+                    <div class="col-lg-5">
+                        <div class="hero__tab">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Car
+                                        Rental</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Buy Car</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <div class="hero__tab__form">
+                                        <h2>Find Your Dream Car</h2>
+                                        <form>
+                                            <div class="select-list">
+                                                <div class="select-list-item">
+                                                    <p>Select Year</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Year</option>
+                                                        <option value="">2020</option>
+                                                        <option value="">2019</option>
+                                                        <option value="">2018</option>
+                                                        <option value="">2017</option>
+                                                        <option value="">2016</option>
+                                                        <option value="">2015</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-list-item">
+                                                    <p>Select Brand</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Brand</option>
+                                                        <option value="">Acura</option>
+                                                        <option value="">Audi</option>
+                                                        <option value="">Bentley</option>
+                                                        <option value="">BMW</option>
+                                                        <option value="">Bugatti</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-list-item">
+                                                    <p>Select Model</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Model</option>
+                                                        <option value="">Q3</option>
+                                                        <option value="">A4 </option>
+                                                        <option value="">AVENTADOR</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-list-item">
+                                                    <p>Select Mileage</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Mileage</option>
+                                                        <option value="">27</option>
+                                                        <option value="">25</option>
+                                                        <option value="">15</option>
+                                                        <option value="">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <p>Price Range:</p>
+                                                <div class="price-range-wrap">
+                                                    <div class="price-range"></div>
+                                                    <div class="range-slider">
+                                                        <div class="price-input">
+                                                            <input type="text" id="amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="site-btn">Searching</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <div class="hero__tab__form">
+                                        <h2>Buy Your Dream Car</h2>
+                                        <form>
+                                            <div class="select-list">
+                                                <div class="select-list-item">
+                                                    <p>Select Year</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Year</option>
+                                                        <option value="">2020</option>
+                                                        <option value="">2019</option>
+                                                        <option value="">2018</option>
+                                                        <option value="">2017</option>
+                                                        <option value="">2016</option>
+                                                        <option value="">2015</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-list-item">
+                                                    <p>Select Brand</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Brand</option>
+                                                        <option value="">Acura</option>
+                                                        <option value="">Audi</option>
+                                                        <option value="">Bentley</option>
+                                                        <<option value="">BMW</option>
+                                                            <option value="">Bugatti</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-list-item">
+                                                    <p>Select Model</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Model</option>
+                                                        <option value="">Q3</option>
+                                                        <option value="">A4 </option>
+                                                        <option value="">AVENTADOR</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-list-item">
+                                                    <p>Select Mileage</p>
+                                                    <select>
+                                                        <option data-display=" ">Select Mileage</option>
+                                                        <option value="">27</option>
+                                                        <option value="">25</option>
+                                                        <option value="">15</option>
+                                                        <option value="">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <p>Price Range:</p>
+                                                <div class="price-range-wrap">
+                                                    <div class="price-range"></div>
+                                                    <div class="range-slider">
+                                                        <div class="price-input">
+                                                            <input type="text" id="amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="site-btn">Searching</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Hero Section End -->
 
-        </div>
         <div class="card bg-dark p-2 text-center mt-4">
             <div class="card-body w-80 mx-auto btn-btn-success" style="border-radius: 20%;">
                 <h3 class="card-title text-white text-uppercase fs-5">
@@ -95,97 +215,128 @@
                 </p>
             </div>
         </div>
-        <!-- listes des voiture -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/v1.PNG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/V2.PNG" class="d-block w-100" alt="...">
-                            </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- filtre  -->
+                <div class="row">
+                    <!-- Filtre par Marque -->
+                    <div class="col">
+                        <h4>Filtre :</h4>
+                        <select class="form-select">
+                            <option selected>Toutes les marques</option>
+                            <option>Toyota</option>
+                            <option>Honda</option>
+                            <option>Nissan</option>
+                        </select>
+                        <!-- les prix  -->
+                        <div class="col">
+                            <select class="form-select">
+                                <option selected>Les prix</option>
+                                <option>99.99 GNF </option>
+                                <option>34.3 GNF </option>
+                                <option>22.4 GNF </option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nom voiture</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat!</p>
-                        <!--  les étoiles -->
-                        <div class="d-flex mb-2">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9734;</span>
-                        </div>
-                        <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                        <!-- Boutons -->
-                        <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
-                        <a href="#" class="btn btn-dark">Acheter</a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-9">
+                <!-- listes des voiture -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/v1.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/V2.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nom voiture</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                    placeat!</p>
+                                <!--  les étoiles -->
+                                <div class="d-flex mb-2">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
+                                <!-- Boutons -->
+                                <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                <a href="#" class="btn btn-dark">Acheter</a>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/V5.PNG" class="d-block w-100" alt="...">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/V5.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/V2.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="images/V2.PNG" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nom voiture</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                    placeat!</p>
+                                <!-- Ajouter les étoiles -->
+                                <div class="d-flex mb-2">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
+                                <!-- Boutons -->
+                                <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                <a href="#" class="btn btn-dark">Acheter</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nom voiture</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat!</p>
-                        <!-- Ajouter les étoiles -->
-                        <div class="d-flex mb-2">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9734;</span>
-                        </div>
-                        <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                        <!-- Boutons -->
-                        <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
-                        <a href="#" class="btn btn-dark">Acheter</a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/V2.PNG" class="d-block w-100" alt="...">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/V2.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/v1.PNG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="images/v1.PNG" class="d-block w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nom voiture</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                                    placeat!</p>
+                                <!-- Ajouter les étoiles -->
+                                <div class="d-flex mb-2">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
+                                <!-- Boutons -->
+                                <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                <a href="#" class="btn btn-dark">Acheter</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nom voiture</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat!</p>
-                        <!-- Ajouter les étoiles -->
-                        <div class="d-flex mb-2">
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9733;</span>
-                            <span class="star">&#9734;</span>
-                        </div>
-                        <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                        <!-- Boutons -->
-                        <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
-                        <a href="#" class="btn btn-dark">Acheter</a>
                     </div>
                 </div>
             </div>
@@ -211,6 +362,30 @@
         </div>
 
     </div>
+
+
+
+
+
+
+
+    <!-- cdn js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
+
 
 </html>
