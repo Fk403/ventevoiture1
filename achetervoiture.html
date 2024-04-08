@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- font awesome cdn  -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -91,7 +91,7 @@
                                                 <div class="select-list-item">
                                                     <p> Modele</p>
                                                     <select>
-                                                        <option data-display=" ">Selectionnez  Modele</option>
+                                                        <option data-display=" ">Selectionnez Modele</option>
                                                         <option value="">Q3</option>
                                                         <option value="">A4 </option>
                                                         <option value="">AVENTADOR</option>
@@ -154,7 +154,7 @@
                                                 <div class="select-list-item">
                                                     <p> Modele</p>
                                                     <select>
-                                                        <option data-display=" ">Selectionnez  Modele</option>
+                                                        <option data-display=" ">Selectionnez Modele</option>
                                                         <option value="">Q3</option>
                                                         <option value="">A4 </option>
                                                         <option value="">AVENTADOR</option>
@@ -204,42 +204,48 @@
             </div>
         </div>
         <!-- Affichages des voiture-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div col-3>
+                <div class="col-3">
                     <div class="form-group">
-                        <h6 style="font-weight: bolder;padding-top: 25px;"></i> Nombre de places</h6>
-                        <select class="form-control" id="">
-                            <option value="">Sélectionnez nombre de place</option>
-                            <option value="1">5 places </option>
-                            <option value="2">4 places </option>
-                            <option value="3">3 places </option>
+                        <h6 style="font-weight: bolder;padding-top: 25px; display: inline-block;"><i class="fas fa-chair"></i> Nombre de places
+                        </h6>
+                        <select class="form-select">
+                            <option value="">Sélectionnez nombre de places</option>
+                            <option value="5">5 places</option>
+                            <option value="4">4 places</option>
+                            <option value="3">3 places</option>
                         </select>
-                        <h6 style="font-weight: bolder;"></i>Nombre de portes</h6>
-                        <select class="form-control" id="" s>
-                            <option  class="form-control" value="">Sélectionnez le nombre de porte</option>
-                            <option value="1">5 portes </option>
-                            <option value="2">4 portes </option>
-                            <option value="3">3 portes </option>
+                    </div>
+                    <div class="form-group">
+                        <h6 style="font-weight: bolder;display: inline-block;"><i class="fas fa-door-open"></i> Nombre de portes</h6>
+                        <select class="form-select">
+                            <option value="">Sélectionnez le nombre de porte</option>
+                            <option value="5">5 portes</option>
+                            <option value="4">4 portes</option>
+                            <option value="3">3 portes</option>
                         </select>
-                        <h6 style="font-weight: bolder;"></i>Année du véhcule</h6>
-                        <select class="form-control" id="">
+                    </div>
+                    <div class="form-group">
+                        <h6 style="font-weight: bolder;display: inline-block;"><i class="fas fa-calendar-alt"></i> Année du véhicule</h6>
+                        <select class="form-select">
                             <option value="">Sélectionnez l'année du véhicule</option>
-                            <option value="1">2023 </option>
-                            <option value="2">2022 </option>
-                            <option value="3">2024 </option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2024">2024</option>
                         </select>
-                        <h6 style="font-weight: bolder;">Boite de vitesse</h6>
-                        <select class="form-control" id="">
-                            <option value="">Sélectionnez boite de vitesse</option>
-                            <option value="1">2023 </option>
-                            <option value="2">2022 </option>
-                            <option value="3">2024 </option>
+                    </div>
+                    <div class="form-group">
+                        <h6 style="font-weight: bolder;display: inline-block;"><i class="fas fa-car"></i> Boîte de vitesse</h6>
+                        <select class="form-select">
+                            <option value="">Sélectionnez boîte de vitesse</option>
+                            <option value="1">Automatique</option>
+                            <option value="2">Manuelle</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-9">
+                    <div class="row row-cols-3  row-cols-md-3 g-5">
                         <div class="col-4">
                             <div class="card h-100">
                                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -302,7 +308,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="col-4">
                             <div class="card h-100">
                                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -431,8 +437,8 @@
                 </div>
             </div>
         </div>
-         <!-- pagination -->
-         <div class="row mt-3">
+        <!-- pagination -->
+        <div class="row mt-3">
             <div class="col-md-3 offset-md-4">
                 <ul class="pagination">
                     <li class="page-item">
@@ -450,7 +456,7 @@
                 </ul>
             </div>
         </div>
-       
+
     </div>
 
     <!-- Js Plugins -->
