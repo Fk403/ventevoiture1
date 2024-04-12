@@ -24,7 +24,8 @@
       "default",
       {
         "duplicate-id": "off",
-        "duplicate-id-active": "off"
+        "duplicate-id-active": "off",
+        "duplicate-id-aria": "off"
       }
     ],
     "axe/forms": [

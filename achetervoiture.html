@@ -203,232 +203,335 @@
                 </p>
             </div>
         </div>
-        <!-- Affichages des voiture-->
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="form-group">
-                        <h6 style="font-weight: bolder;padding-top: 25px; display: inline-block;"><i class="fas fa-chair"></i> Nombre de places
-                        </h6>
-                        <select class="form-select">
-                            <option value="">Sélectionnez nombre de places</option>
-                            <option value="5">5 places</option>
-                            <option value="4">4 places</option>
-                            <option value="3">3 places</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h6 style="font-weight: bolder;display: inline-block;"><i class="fas fa-door-open"></i> Nombre de portes</h6>
-                        <select class="form-select">
-                            <option value="">Sélectionnez le nombre de porte</option>
-                            <option value="5">5 portes</option>
-                            <option value="4">4 portes</option>
-                            <option value="3">3 portes</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h6 style="font-weight: bolder;display: inline-block;"><i class="fas fa-calendar-alt"></i> Année du véhicule</h6>
-                        <select class="form-select">
-                            <option value="">Sélectionnez l'année du véhicule</option>
-                            <option value="2023">2023</option>
-                            <option value="2022">2022</option>
-                            <option value="2024">2024</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <h6 style="font-weight: bolder;display: inline-block;"><i class="fas fa-car"></i> Boîte de vitesse</h6>
-                        <select class="form-select">
-                            <option value="">Sélectionnez boîte de vitesse</option>
-                            <option value="1">Automatique</option>
-                            <option value="2">Manuelle</option>
-                        </select>
-                    </div>
+        <!-- Affichages des voitures et les filitre-->
+        <div class="row">
+            <!-- ====filtres==== -->
+            <div class=" col-lg-3 col-md-4 col-sm-6">
+                <div class="car__filter">
+                    <form action="#">
+                        <div class="form-group">
+                            <label style="font-weight: bolder;padding-top: 25px;"><i class="fas fa-users"
+                                    style="color: rgba(74, 13, 23);"></i> Nombre de places</label>
+                            <select class="form-select"  data-display="Brand">
+                                <option value="5">5 places</option>
+                                <option value="4">4 places</option>
+                                <option value="3">3 places</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bolder;"><i class="fas fa-car" style="color: rgba(74, 13, 23);"></i>
+                                Nombre de portes</label>
+                            <select class="form-select">
+                                <option value="5">5 portes</option>
+                                <option value="4">4 portes</option>
+                                <option value="3">3 portes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bolder;"><i class="fas fa-calendar-alt"
+                                    style="color: rgba(74, 13, 23);"></i> Année du
+                                véhicule</label>
+                            <select class="form-select form-control-lg">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bolder;"><i class="fas fa-car" style="color: rgba(74, 13, 23);"></i>
+                                Boîte de
+                                vitesse</label>
+                            <select class="form-select">
+                                <option value="1">Automatique</option>
+                                <option value="2">Manuelle</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: bolder;"><i class="fas fa-gas-pump"
+                                    style="color: rgba(74, 13, 23);"></i>Moteur</label>
+                            <select class="form-select">
+                                <option value="1">Diesel</option>
+                                <option value="2">Manuelle</option>
+                            </select>
+                        </div>
+                        <label for="boiteVitesse" style="font-weight: bolder;"><i class="fas fa-sliders-h"
+                                style="color: rgba(74, 13, 23);"></i>Option</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Climatisation
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                GPS
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Mini Frigo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                siege chauffant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                siege Auto
+                            </label>
+                        </div>
+                        <label for="customRange2" class="form-label" style="display: block;">Prix max</label>
+                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                        <div class="form-group">
+                            <label style="font-weight: bolder;"><i class="fas fa-car" style="color: rgba(74, 13, 23);"></i>Type
+                                de véhicule</label>
+                            <select class="form-select">
+                                <option value="1">Berline</option>
+                                <option value="2">Manuelle</option>
+                            </select>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-9">
-                    <div class="row row-cols-3  row-cols-md-3 g-5">
-                        <div class="col-4">
-                            <div class="card h-100">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="img/v1.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/V2.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
+                
+            </div>
+            <!-- ===Voiture  -->
+            <div class="col-lg-9 col-md-8 col-sm-3">
+                <div class="row row-cols-3  row-cols-md-3 g-5">
+                    <div class="col-md-4 col-sm-6 mix sale">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-1.jpg" alt="">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-6.jpg" alt="">
+                                <img src="img/cars/car-3.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Nom voiture</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                                        placeat!</p>
-                                    <!--  les étoiles -->
-                                    <div class="d-flex mb-2">
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9734;</span>
-                                    </div>
-                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6>
-                                    <!-- Boutons -->
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <a href="#" class="btn btn-dark">Acheter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix sale">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-2.jpg" alt="">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-6.jpg" alt="">
+                                <img src="img/cars/car-4.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <a href="#" class="btn btn-dark">Acheter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-3.jpg" alt="">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-6.jpg" alt="">
+                                <img src="img/cars/car-5.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <a href="#" class="btn btn-dark">Acheter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix sale">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-4.jpg" alt="">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-2.jpg" alt="">
+                                <img src="img/cars/car-1.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <a href="#" class="btn btn-dark">Acheter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-5.jpg" alt="">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-7.jpg" alt="">
+                                <img src="img/cars/car-2.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <a href="#" class="btn btn-dark">Acheter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix sale">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-6.jpg" alt="">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-3.jpg" alt="">
+                                <img src="img/cars/car-1.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
                                     <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
                                     <a href="#" class="btn btn-dark">Acheter</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card h-100">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="img/V5.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/V2.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-7.jpg" alt="">
+                                <img src="img/cars/car-2.jpg" alt="">
+                                <img src="img/cars/car-4.jpg" alt="">
+                                <img src="img/cars/car-1.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Nom voiture</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                                        placeat!</p>
-                                    <!-- Ajouter les étoiles -->
-                                    <div class="d-flex mb-2">
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9734;</span>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                                    <!-- Boutons -->
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <a href="#" class="btn btn-dark">Acheter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-3.jpg" alt="">
+                                <img src="img/cars/car-5.jpg" alt="">
+                                <img src="img/cars/car-2.jpg" alt="">
+                            </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
                                     <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
                                     <a href="#" class="btn btn-dark">Acheter</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-4">
-                            <div class="card h-100">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="img/V2.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/v1.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Nom voiture</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                                        placeat!</p>
-                                    <!-- Ajouter les étoiles -->
-                                    <div class="d-flex mb-2">
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9734;</span>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                                    <!-- Boutons -->
-                                    <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
-                                    <a href="#" class="btn btn-dark">Acheter</a>
-                                </div>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 mix">
+                        <div class="car__item cards">
+                            <div class="car__item__pic__slider owl-carousel">
+                                <img src="img/cars/car-8.jpg" alt="">
+                                <img src="img/cars/car-3.jpg" alt="">
+                                <img src="img/cars/car-5.jpg" alt="">
+                                <img src="img/cars/car-2.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card h-100">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="img/V2.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/v1.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
+                            <div class="car__item__text">
+                                <div class="car__item__text__inner">
+                                    <div class="label-date">2020</div>
+                                    <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                    <ul>
+                                        <li><span>35,000</span> mi</li>
+                                        <li>Auto</li>
+                                        <li><span>700</span> hp</li>
+                                    </ul>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Nom voiture</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                                        placeat!</p>
-                                    <!-- Ajouter les étoiles -->
-                                    <div class="d-flex mb-2">
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9734;</span>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                                    <!-- Boutons -->
-                                    <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
-                                    <a href="#" class="btn btn-dark">Acheter</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card h-100">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="images/V2.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="images/v1.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Nom voiture</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                                        placeat!</p>
-                                    <!-- Ajouter les étoiles -->
-                                    <div class="d-flex mb-2">
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9734;</span>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                                    <!-- Boutons -->
-                                    <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
-                                    <a href="#" class="btn btn-dark">Acheter</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card h-100">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="img/V2.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/v1.PNG" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Nom voiture</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                                        placeat!</p>
-                                    <!-- Ajouter les étoiles -->
-                                    <div class="d-flex mb-2">
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9733;</span>
-                                        <span class="star">&#9734;</span>
-                                    </div>
-                                    <h6 class="card-subtitle mb-2 text-muted">Prix: 99.99 GNF </h6>
-                                    <!-- Boutons -->
-                                    <a href="#" class="btn btn-btn-success text-white mr-2">Détails</a>
+                                    <h6 class="card-subtitle mb-1 text-muted">Prix: 99.99 GNF </h6> <!-- Boutons -->
+                                    <a href="details.html" class="btn btn-btn-success text-white mr-2">Détails</a>
                                     <a href="#" class="btn btn-dark">Acheter</a>
                                 </div>
                             </div>
@@ -438,7 +541,7 @@
             </div>
         </div>
         <!-- pagination -->
-        <div class="row mt-3">
+        <div class="row mt-2">
             <div class="col-md-3 offset-md-4">
                 <ul class="pagination">
                     <li class="page-item">
@@ -456,8 +559,10 @@
                 </ul>
             </div>
         </div>
-
     </div>
+
+
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
