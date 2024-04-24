@@ -50,6 +50,13 @@
           "-webkit-tap-highlight-color"
         ]
       }
-    ]
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "detect-css-reflows/paint": "off"
   }
 }

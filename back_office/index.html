@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lien fichier css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Formulaire| Voiture</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <form action="" id="" method="">
+            <div class="container-fluid" id="ajoutvente">
+                <h2>Ajoutez Une Voiture à Vendre</h2>
+                <p>--Remplissez le formulaire ci-dessous--</p>
+            </div>
+            <div class="container-fluid" id="ajoutventevoiture">
+                <form action="" method="">
+                    <div class="row d flex justify-content-center">
+                        <div class="col-md-10">
+                            <div class="col-mb-3">
+                                <h5 class="btn-lg"> Information de la Voiture </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" name="" id="ville" required="">
+                                                <option value=""></option>
+                                                <option value="1">Conakry</option>
+                                                <option value="2">Kindia</option>
+                                                <option value="3">Mamou</option>
+                                                <option value="4">Faranah</option>
+                                                <option value="5">Labé</option>
+                                                <option value="6">Kankan</option>
+                                                <option value="7">N'zerekore</option>
+                                            </select>
+
+                                            <label for="">
+                                                Ville
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" name="" id="typevoiture" required="">
+                                                <option value=""></option>
+                                                <option value="1">Berline</option>
+                                                <option value="2">Cabriolet</option>
+                                                <option value="3">Citadine</option>
+                                            </select>
+
+                                            <label for="">
+                                                Type de voiture
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" name="" id="marque" required="">
+                                                <option value=""></option>
+                                                <option value="1691">MAHINDRA</option>
+                                                <option value="1692">MAN</option>
+                                                <option value="1693">MARUTI</option>
+                                                <option value="1694">MASERATI</option>
+                                            </select>
+
+                                            <label for="">
+                                                Marque
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" name="" id="modelvoiture" required="">
+                                                <option value=""></option>
+                                                <option value="2">BMW X3</option>
+                                                <option value="2">Audi A4</option>
+                                            </select>
+
+                                            <label for="">
+                                                Model Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="annee" max="9999" min="1000"
+                                                required="" type="number" value="">
+
+                                            <label for="">
+                                                Année de voiture
+                                            </label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="kilometrage" type="number" value="">
+                                            <label for="kilometrage">
+                                                Kilométrage Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="couleurinterieur" type="text" value=""
+                                                required="">
+                                            <label for="">
+                                                Couleur Intérieur
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="couleurexterieur" type="text" value=""
+                                                required="">
+                                            <label for="">
+                                                Couleur extérieur
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <fieldset class="form-group p-3 border mb-3">
+                                            <legend class="w-auto px-2">Moteur</legend>
+                                            <ul id="moteur">
+                                                <li><input id="moteur-0" name="moteur" type="radio" value="diesel"
+                                                        required="">
+                                                    <label for="">Diesel</label>
+                                                </li>
+                                                <li><input id="moteur-1" type="radio" value="essence" required="">
+                                                    <label for="moteur-1">Essence</label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <fieldset class="form-group p-3 border mb-3">
+                                            <legend class="w-auto px-2"> Boite de vitesse</legend>
+                                            <ul id="boitevitesse">
+                                                <li><input id="boitevitesse-0" name="boitevitesse" required=""
+                                                        type="radio" value="manuelle"> <label
+                                                        for="boitevitesse-0">Manuelle</label></li>
+                                                <li><input id="boitevitesse-1" name="boitevitesse" required=""
+                                                        type="radio" value="automatique"> <label
+                                                        for="boitevitesse-1">Automatique</label></li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="nombreplace" required="">
+                                                <option value="2"></option>
+                                                <option value="2">2 places</option>
+                                                <option value="5">5 places</option>
+                                                <option value="6">6 places</option>
+                                                <option value="7">7 places</option>
+                                                <option value="9">9 places</option>
+                                            </select>
+
+                                            <label for="">
+                                                Nombre de place
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="nombreporte" required="">
+                                                <option value=""></option>
+                                                <option value="2">2 portes</option>
+                                                <option value="4">4 portes</option>
+                                                <option value="5">5 portes</option>
+                                                <option value="6">6 portes</option>
+                                            </select>
+
+                                            <label for="">
+                                                Nombre de porte
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="kilometrage" type="number" value=""
+                                                required="">
+                                            <label for="kilometrage">
+                                                Nombre de clé
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="nombreporte" required="">
+                                                <option value=""></option>
+                                                <option value="2">Neuf</option>
+                                                <option value="4">Occassion</option>
+                                                <option value="5">Réparé</option>
+                                                <option value="6">En bon état</option>
+                                                <option value="6">En mauvais état</option>
+                                            </select>
+
+                                            <label for="">
+                                                Etat de Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="nombreporte" required="">
+                                                <option value=""></option>
+                                                <option value="disponible">Disponible</option>
+                                                <option value="reserve">Réservée</option>
+                                                <option value="reserve">Vendu</option>
+                                            </select>
+
+                                            <label for="">
+                                                Statut Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="optionvoiture" required="">
+                                                <option value=""></option>
+                                                <option value="disponible">option1</option>
+                                                <option value="reserve">option2</option>
+                                                <option value="reserve">option3</option>
+                                            </select>
+
+                                            <label for="">
+                                                Option Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="adressevoiture" type="text" value=""
+                                                required="">
+                                            <label for="kilometrage">
+                                                Adresse Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating py-2">
+                                            <input class="form-control py-4" id="prixvoiture" type="number" step="0.01"
+                                                min="0" value="" required="">
+                                            <label for="">
+                                                Prix Voiture
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- upload des images -->
+                            <div class="col-mb-3">
+                                <div class="col-mb-3">
+                                    <h5 class="btn-lg"> Information de la Voiture </h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label class="h4" for="photo_exterieur1">
+                                                Photo Angle Droit Avant
+                                            </label>
+                                            <div class="file-upload-placeholder">
+
+                                                <input accept="image/*" class="file-upload-input" id="photoexterieur1"
+                                                    name="photo_exterieur1" onchange="readURL(this);" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <div class="file-upload">
+                                            <label for="photo_exterieur2" class="h4">
+                                                (2)-Photo Extérieur de la voiture
+                                            </label>
+                                            <div class="file-upload-placeholder">
+
+                                                <input accept="image/*" class="file-upload-input" id="photoexterieur2"
+                                                    name="photo_exterieur2" onchange="readURL(this)" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label for="photo_interieur1" class="h4">(1)-Photo intérieur de la
+                                                voiture</label>
+                                            <div class="file-upload-placeholder">
+                                                <input accept="image/*" class="file-upload-input"
+                                                    id="form.photo_interieur1" name="photo_interieur1"
+                                                    onchange="readURL(this);" required="" type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label for="photo_interieur2" class="h4">
+                                                (2)-Photo interieur de la voiture
+                                            </label>
+                                            <div class="file-upload-placeholder">
+                                                <input accept="image/*" class="file-upload-input" id="photointerieur2"
+                                                    name="photo_interieur2" onchange="readURL(this);" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label for="photo_coffre" class="h4">
+                                                Photo Coffre
+                                            </label>
+                                            <div class="file-upload-placeholder">
+                                                <input accept="image/*" class="file-upload-input" id="photo_coffre"
+                                                    name="photo_coffre" onchange="readURL(this);" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label for="photo_cartegrise" class="text-center h4">
+                                                Photo de la carte grise
+                                            </label>
+                                            <div class="file-upload-placeholder">
+                                                <input accept="image/*" class="file-upload-input" id="photo_cartegrise"
+                                                    name="photo_cartegrise" onchange="readURL(this);" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label for="photo_vignette" class="text-center h4">
+                                                Photo de la vignette
+                                            </label>
+                                            <div class="file-upload-placeholder">
+                                                <input accept="image/*" class="file-upload-input" id="photo_vignette"
+                                                    name="photo_vignette" onchange="readURL(this);" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="file-upload">
+                                            <label for="photoassurance" class="text-center h4">
+                                                Photo de l'assurance
+                                            </label>
+                                            <div class="file-upload-placeholder">
+                                                <input accept="image/*" class="file-upload-input" id="photoassurance"
+                                                    name="photoassurance" onchange="readURL(this);" required=""
+                                                    type="file">
+
+                                                <div class="drag-text">
+                                                    <h3>CLIQUEZ OU FAITES GLISSER UNE IMAGE POUR L'AJOUTER</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="file-upload-preview">
+                                                <img class="file-upload-image" src="#" alt="photo exterieur 1">
+                                                <div class="file-upload-remove">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                                        Supprimer
+                                                        <span class="imge-title"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-10">
+                            <div class="col-mb-3">
+                                <input class="card-title text-center btn-lg" value="Ajouter une voiture" type="submit"
+                                    name="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </form>
+
+        <!-- lien js -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
